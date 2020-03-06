@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html >
+  <head>
+<!--Jorge Munoz.
+    CSD 122 Javascript and JQery.
+    Web Project, Feb 2020.-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- X-UA-Compatible is a document mode meta tag that allows to choose what version of Internet Explorer the page should be rendered as-->
+    <title>Jorge Munoz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--The width=device-width key-value pair sets the width of the viewport to the width of the device. 
+        The initial-scale=1 key-value pair sets the initial zoom level when visiting the page. -->
+    <link rel="stylesheet" href="css&Script/main.css" /> <!--CSS file of whole wenside-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="css&Script/script.js"></script> <!--Js File of whole webside-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" /> <!--Library fro icons social media-->
+  </head>
+  <body>
+    <!--What this effect look for is splitting the bacground into multiple png files with transparent background (layers), 
+        which will allow to create the sense of depth. Layers in the back will be moving slower than the ones in 
+        the foreground what will give us the effect of depth. For this, I created a parent container "wrapper".
+        Then add multiple divs with class parallax__layer for each section. 
+        The entire contain has to be inside wrapper, with some exception in the bottom.-->
+    <div id="wrapper">
+
+<!----------------------------------------Hero-container----------------------------------------->
+      <!-- The next divs contains each background layer -->
+      <header class="parallax__group hero-container">
+        <div class="parallax__layer bg"></div>
+        <div class="parallax__layer code3"></div>
+        <div class="parallax__layer code2"></div>
+        <div class="parallax__layer bordeF3"></div>
+        <div class="parallax__layer bordeF2"></div>
+        <div class="parallax__layer bordeF"></div>
+        <div class="parallax__layer hero-text">
+          <!-- Logo I'm Jorge Munoz -->
+          <div class="myName">
+            <img src="img/logo1.png" alt="I'm Jorge" />
+          </div>
+        </div>
+      </header> <!--end hero-container-->
+
+<!--------------------------------------info-container------------------------------------------->
+      <div class="parallax__group info-container">
+        <img src="img/foto.jpg" alt="Lively and colourful concert" />
+        <div class="text-container"> <!-- This class will be used in all pages text style.-->
+          <h2>Who am I?</h2>
+          <p>My name's Jorge. I'm a current student of web designer and developer from Venezuela but I live in Bellevue, WA.</p>
+          <p>- For more detail you can check my curriculum</p>
+          <a href="https://github.com/Jorgeluismunoz/Jorge/blob/master/CVJorgeM.pdf" target="_blank" class="btn">Curriculum Vitae</a>
+        </div>
+      </div> <!--end info-container-->
+
+<!-------------------------------------aplication------------------------------------------------>
+      <!-- This section appears some aplications  -->
+      <div class="parallax__group aplication">
+        <a href="app1/RPS.html" target="_blank"><img class="logo" src="img/app1.png" alt="logo1" /></a>
+        <img class="logo" src="img/logo.png" alt="logo2" />
+        <img class="logo" src="img/logo.png" alt="logo3" />
+        <img class="logo" src="img/logo.png" alt="logo4" />
+      </div> <!--end aplication-->
+
+<!---------------------------------------info-container------------------------------------------->
+      <div class="parallax__group info-container">
+        <section>
+          <h2>Summary of Qualifications</h2><br>
+          <p>
+            • Skilled at analyzing and solving problems.<br><br>
+            • Able to work with different O.S; Windows, macIOS and, linux.<br><br>
+            • Basic knowledge in programming languages: JavaScript, Java,
+            HTML.<br><br>
+            • Proficient in graphic design; Photoshop, Flash, Ilustrer.<br><br>
+            • Able to work as part of a team.<br><br>
+            • Ability to work under pressure.<br><br>
+            • Received award monthly better performance and quality of
+            service.<br><br>
+            • Speak Spanish (Native), English (Medium), Portuguese (Medium).</p>
+        </section>
+
+<!-----------------------------------Skill Bar section------------------------------------------->
+        <!-- Progress or skill bars are set of simple or animated bars generally used to showcase data with horizontal bars.
+             data-percent indicate the percent in the bar, skillbar-title defined with a color for the box title, 
+             skillbar-bar is defined with a color for the percent bar, and skill-bar-percent its an string that show the percent. -->
+        <section>
+          <div class="skillbar clearfix " data-percent="55%">
+            <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #e67e22;"></div>
+            <div class="skill-bar-percent">55%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="45%">
+            <div class="skillbar-title" style="background: #2980b9;"><span>CSS</span></div>
+            <div class="skillbar-bar" style="background: #3498db;"></div>
+            <div class="skill-bar-percent">45%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="30%">
+            <div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+            <div class="skill-bar-percent">30%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="45%">
+            <div class="skillbar-title" style="background: #46465e;"><span>JavaScript</span></div>
+            <div class="skillbar-bar" style="background: #5a68a5;"></div>
+            <div class="skill-bar-percent">45%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="42%">
+            <div class="skillbar-title" style="background: #46465e;"><span>Java</span></div>
+            <div class="skillbar-bar" style="background: #5a68a5;"></div>
+            <div class="skill-bar-percent">42%</div>
+          </div>
+          
+          <div class="skillbar clearfix " data-percent="85%">
+            <div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+            <div class="skillbar-bar" style="background: #4288d0;"></div>
+            <div class="skill-bar-percent">85%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #124e8c;"><span>Ilustrer</span></div>
+            <div class="skillbar-bar" style="background: #4288d0;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> 
+  
+          <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar-title" style="background: #27ae60;"><span>Spanish</span></div>
+            <div class="skillbar-bar" style="background: #2ecc71;"></div>
+            <div class="skill-bar-percent">100%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="60%">
+            <div class="skillbar-title" style="background: #27ae60;"><span>English</span></div>
+            <div class="skillbar-bar" style="background: #2ecc71;"></div>
+            <div class="skill-bar-percent">60%</div>
+          </div> 
+          
+          <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #27ae60;"><span>Portugues</span></div>
+            <div class="skillbar-bar" style="background: #2ecc71;"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div> 
+        </section><!-- End Skill Bar -->
+
+<!-----------------------------------info-container 2-------------------------------------------->
+      </div>
+      <div class="parallax__group info-container2">
+        <section>
+          <div class="text-container">
+            <hr size="3" color="white">
+            <h2>Education</h2>
+            <p>Software Development (Current)</p>
+            <p>- Lwtech - Kirkland, WA, December 18, current.</p>
+          </div>
+          <div class="text-container">
+            <p>Telecommunication Engineer</p>
+            <p>- UNEFA - Sucre, Venezuela, February 2008 to July 2013.</p>
+          </div>
+          <div class="text-container">
+            <hr size="3" color="white">
+            <h2>Work Experience USA</h2>
+            <p>Family Business (Current)</p>
+            <p>- Maxi services - Bellevue. July 2018, current.<br>
+              Manage teams that perform different types of services.</p>
+          </div>
+          <div class="text-container">
+            <p>Warehouse</p>
+            <p>- Snohomish Co-Op - Snohomish. January 2018 to July 2018. <br>
+              Deliver commodities to customers, organize pallets with a forklift, keep the warehouse clean.</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="text-container">
+            <hr size="3" color="white">
+            <h2>Work Experience Venezuela</h2>
+            <p>Monitoring Analyst</p>
+            <p>- Dayco Host - Caracas, Venezuela. February 2017 to October 2017.<br>
+              Monitor the company's network in order to maintain an optimal service and 100% operability. Perform
+              preventive and corrective maintenance of physical and virtual equipment. If there is an anomaly in
+              the network, solve it immediately or escalate it to the group in charge.</p>
+          </div>
+          <div class="text-container">
+            <p>Implementation leader</p>
+            <p>- Neuronet Technology - Caracas, Venezuela. February 2016 to January 2017.<br>
+              In charge of coordinating the installation and commissioning of telecommunication projects such as
+              radio link installation, service extensions, network service migrations, etc. Remotely organize groups
+              responsible for the execution of the project.</p>
+          </div>
+          <div class="text-container">
+            <p> Teacher</p>
+            <p>- UMC - Vargas, Venezuela. February 2015 to December 2015.<br>
+              Professor of Electrical Networks I for Maritime Engineers in the Maritime University.</p>
+          </div>
+        </section>
+      </div> <!--End container2-->
+
+<!-------------------------------------Foot Section---------------------------------------------->
+<!-- Footer is separated in two parts. -->
+      <div id="preFooter">
+          <div class="text-container">
+            <p> </p> <!--Empty p tag needed-->
+            <p>- If you want to see codes of this webside, click next buttons.</p>
+              <a href="https://github.com/Jorgeluismunoz/Jorge/blob/master/css%26Script/index.html" target="_blank" class="btn">HTML Code</a>
+              <a href="https://github.com/Jorgeluismunoz/Jorge/blob/master/css%26Script/mainJorge.css" target="_blank" class="btn">CSS Code</a>
+              <a href="https://github.com/Jorgeluismunoz/Jorge/blob/master/css%26Script/scriptJorge.js" target="_blank" class="btn">JavaScript Code</a>
+            </div>
+      </div>
+      <footer>
+        <p >© 2020 Jorge Munoz. All rights reserved.</p>
+      </footer>
+<!----------------------------------------------------------------------------------------------->
+    </div> <!--This is the end of parallax__group tha contains a group ob section.-->
+
+<!-------------------------------------Social Container---------------------------------------------->
+<!-- This section will appear in the bottom of windows and it will stay fiexed in the scream. 
+     This setion is out of parallax__group-->
+    <div class="social-container">
+      <a href="https://github.com/Jorgeluismunoz" target="_blank"
+        ><i class="icon ion-logo-github"></i
+      ></a>
+      <a href="https://www.instagram.com/jorgeluism2/" target="_blank"
+        ><i class="icon ion-logo-instagram"></i
+      ></a>
+      <a href="https://www.facebook.com/jorgeluis2009" target="_blank"
+        ><i class="icon ion-logo-facebook"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/jorge-munoz-5644128b/" target="_blank"
+        ><i class="icon ion-logo-linkedin"></i
+      ></a>
+    </div> 
+
+<!-------------------------------------navigation Menu----------------------------------------------->
+<!-- This section has to be in the but it will appear in the top of windows and it will stay fiexed in the scream. 
+     This setion is out of parallax__group-->
+    <nav>
+      <div class="nav-container">
+          <a href="index.html" class="thisBtn">Home</a></li>
+          <a href="page/about.html" class="btn">About</a></li>
+          <a href="page/blog.html" class="btn"> Blog</a></li>
+          <a href="page/contact.html" class="btn">Contact</a></li>
+      </div> 
+  </nav>
+<!--------------------------------------------------------------------------------------------------->
+  </body>
+</html>

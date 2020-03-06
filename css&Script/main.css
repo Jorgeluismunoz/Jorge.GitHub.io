@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/*--Jorge Munoz.
+    CSD 122 Javascript and JQery.
+    Web Project, Feb 2020.*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@font-face {
+  font-family: Bebas;
+  src: url('../fonts/BebasKai-Regular.otf');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #0b75db;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/*---------------------bottom------------------------*/
+.btn {
+  border: 1.5px solid #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+  background: rgba(2, 53, 102, 0.7)
+  
+}
+.thisBtn {
+  border: 1.5px solid white;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+  background: rgba(98, 166, 232, 0.7)
+}
+.btn:hover {
+  color: #000;
+  background: #fff;
+}
+.thisBtn:hover {
+  color: #000;
+  background: #fff;
+}
+/*--------------parallax-------------------*/
+/*The first div will contain our header content. 
+The background image, applied to a pseudo element, 
+will be placed n pixel “away” from the user on the z-axis, 
+while the content will be level with the rest of the page and will scroll at the normal speed.*/
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  transform-style: preserve-3d;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* Each background layer*/
+/*The pseudo element is placed behind the content of the header. 
+translateZ(-npx) defines the layer’s distance from the user along the z-axis.
+In this case, a translateZ(-npx) would require a scale() and so on
+z-index: n defines the position of layer*/
+.bg {
+  background: url('../img/bg.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-600px) scale(3);
+  z-index: 1;
+}
+.code3 {
+  background: url('../img/code3.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-525px) scale(2.75);
+  z-index: 2;
+}
+.code2 {
+  background: url('../img/code2.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-400px) scale(2.33333333);
+  z-index: 3;
+}
+.bordeF3 {
+  background: url('../img/bordeF3.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-250px) scale(1.833333333);
+  z-index: 4;
+}
+.bordeF2 {
+  background: url('../img/bordeF2.png') no-repeat center;
+  background-size: cover;
+  transform: translateZ(-125px) scale(1.4167);
+  z-index: 5;
+}
+.bordeF {
+  background: url('../img/bordeF.png') repeat-x center;
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+  z-index: 6;
+}
+.hero-text {
+
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+  z-index: 7;
+}
+/*In the case I want to put text in my header*/
+.hero-text h2 {
+  font-size: 1.25rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+}
+/*-----------Logo-----------*/
+.myName {
+margin-top: 20%;
+}
+.myName img {
+  align-content: center;
+  left: 0px;
+  width: 50%;
+} 
+/*-----------footer-----------*/
+/*This part will appears static in the screem, it's out of parallax.
+This has a transiion, that is very short when the page is load,
+it has some shadow sefects drop-shadow, */
+.social-container {
+  position: absolute;
+  left: 2.5rem;
+  bottom: 2.5rem;
+  background-color:#0b75db ;
+  width: 180px;
+  -webkit-filter: drop-shadow(5px 5px 5px #0b75db);
+  filter: drop-shadow(5px 5px 3px #0b75db);
+  padding-left: 1.25rem;
+  transition: all 0.3s ease-in-out;
+  height: fit-content;
+}
+.social-container i {
+  font-size: 2.25rem;
+  margin-right: 0.25rem;
+  opacity: 0.5;
+}
+/*----------nav container-----------*/
+.nav-container {
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+}
+.nav-container i {
+  font-size: 2.25rem;
+  margin-right: 0.25rem;
+} 
+/*---------info ontainer----------*/
+.info-container {
+  background: #0b75db;
+  z-index: 8;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  transform: translateZ(0) scale(1);
+  height: auto;
+  padding: 10%;
+}
+.info-container img {
+  width: 60%;
+  margin-bottom: 1.5rem;
+  filter: saturate(0.65);
+}
+.info-container h2,
+.info-container p {
+  margin-bottom: 1rem;
+}
+.info-container section {
+  width:auto;
+  margin: 4.5rem;
+  filter: saturate(0.65);
+  padding: 10%;
+  margin: 10%;
+  background-color: rgba(98, 166, 232, 0.7);
+}
+.text-container p:nth-of-type(1) {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin: 1rem 2.5rem;
+}
+.text-container p:nth-of-type(2) {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+/*-------------Aplication--------*/
+.aplication {
+  background-color: white;
+  transform: translateZ(0) scale(1);
+  z-index: 8;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: 10%;
+}
+.aplication img {
+  width: 20%;
+  margin-bottom: 1.5rem;
+  filter: saturate(0.65);
+}
+/*This transition will be add with jquerry in app icons*/
+.transition {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
+/*-------------Container 2--------*/
+.info-container2 {
+  background: url('../img/bg2.png') no-repeat center fixed;
+  transform: translateZ(0) scale(1);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  padding: 10%;
+}
+.text-container2 p:nth-of-type(1) {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin: 1rem 2.5rem;
+}
+.text-container2 p:nth-of-type(2) {
+  font-size: 0.6rem;
+  margin-bottom: 3rem;
+}
+
+/*------min-width change----*/
+/*The features is when elemente get 760px */
+@media (min-width: 760px) {
+  .myName {
+    margin-top: 10%;
+  }
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    text-align: left;
+  }
+  .text-container p:nth-of-type(1) {
+    font-size: 1rem;
+    width: 75%;
+    margin: 1rem 0;
+  }
+  .text-container p:nth-of-type(1) {
+    font-size: 1.4rem;
+  }
+  .info-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    text-align: left;
+  }
+  .info-container2 img {
+    justify-self: end;
+    width: 65%;
+    margin-top: 10%;
+  }
+  .text-container2 p:nth-of-type(1) {
+    font-size: 1rem;
+    width: 75%;
+    margin: 1rem 0;
+  }
+  .text-container2 p:nth-of-type(1) {
+    font-size: 0.86rem;
+  }
+}
+/*-----------footer--------------*/
+footer {
+  background-color: rgb(5, 29, 51);
+  position: relative;
+  height: auto;
+  background-color: black;
+  text-align:center;
+  margin: 0.25em;
+  color: lightslategrey;
+}
+#preFooter {
+  background-color: #036dd3;
+  height: auto;
+  text-align:right;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  padding-right: 1%;
+}
+/*-----------------photos about ------------*/
+/* This gives an effect to the pictures in about page*/
+div.polaroid {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #0b2255;
+  background-color: white;
+  box-shadow: 10px 10px 5px #0b2255;
+  color: black;
+}
+div.rotate_right {
+  float: left;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
+}
+div.rotate_left {
+  float: left;
+  -ms-transform: rotate(-8deg); /* IE 9 */
+  -webkit-transform: rotate(-8deg); /* Safari */
+  transform: rotate(-8deg);
+}
+div.polaroid img {
+  width: 80%;
+  margin-left: 25px;
+}
+/*--------------Blog---------*/
+.task {
+  width: 100%;
+}
+.taskImg {
+  width: auto;
+align-content: right;
+}
+/*----------------conctac-------*/
+/*The form contact is defined for this feature*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#Submit {
+  background-color: #0b75db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#clear {
+  background-color: #0b75db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container label{
+  color: #0b2255
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  align-content: center;
+  width: 600px;
+}
+.info-contact {
+    background: url('../img/bg2.png') no-repeat center fixed;
+    background-color: #0b75db ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+}
+#first_name_error,
+#last_name_error,
+#email_address1_error,
+#Subject_address1_error {
+  color: red;
+}
+/*----------Skill bar ---------------*/
+/*This gives form to the Skill bar, the transition-property fit the width background in each bar
+giving a effect of increase bar percente.
+-moz- and -webkit- are the vendor-prefixed properties offered by the relevant rendering 
+engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera, -ms for Internet Explorer). 
+Typically they're used to implement new, or proprietary CSS. This allows properties to be set 
+specific to each individual browser/rendering  */
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+  width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}/*-------------------------------*/

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--Jorge Munoz.
+    CSD 122 Javascript and JQery.
+    Web Project, Feb 2020.-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- X-UA-Compatible is a document mode meta tag that allows to choose what version of Internet Explorer the page should be rendered as-->
+    <title>About Jorge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--The width=device-width key-value pair sets the width of the viewport to the width of the device. 
+        The initial-scale=1 key-value pair sets the initial zoom level when visiting the page. -->
+    <link rel="stylesheet" href="../css&Script/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../css&Script/script.js"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--The entire contain of the page has to be inside wrapper, with some static exception in the bottom.-->
+    <div id="wrapper">
+<!----------------------------------------info-container----------------------------------------->
+      <!-- The first part of page that show text description and logo. -->
+      <div class="parallax__group info-container">
+        <section>
+          <h2>Biography</h2><br>
+          <p>Hello everyone, my name is Jorge. I from Venezuela and I came to USA three years ago.   </p>
+        </section >
+        <div class="logoP">
+          <img src="../img/logo1.png" alt="I'm Jorge" />
+        </div>
+      </div>
+
+<!----------------------------------------info-container2----------------------------------------->
+      <div class="parallax__group info-container2">
+        <section>
+          <div class="text-container">
+            <hr size="3" color="white">
+            <h2>A little about me</h2>
+            <p>I currently enrolled in computer software development and this is my third quarter. I was an ESL student and I'm still in an English learning process. <br>
+              The reason why I want to learn software development; Mainly JavaScript, it is because I like the programming language, and I think it is a very important work field, mainly in a city like Seattle. <br>
+              I like the graphic design and I'd like to learn how create websites, games, and applications. <br>
+              In my free time I like to play video games, dance Latina music, doing exerciser at GYM, hang out with friends and I like to watch movies and anime.
+              I am very friendly, a guy who enjoy meet new people.</p>
+        </section>
+        <article>
+          <div class="polaroid rotate_right">
+            <img src="../img/foto2.jpg" alt="Foto 1" width="284" height="213">
+            <p class="caption">Graduation 2013, Venezuela</p>
+          </div>
+          
+          <div class="polaroid rotate_left">
+            <img src="../img/foto3.jpg" alt="Foto 2" width="284" height="213">
+            <p class="caption">With my mother and nephews</p>
+          </div>
+        </article>
+
+<!-------------------------------------Foot Section---------------------------------------------->
+<!-- Footer is separated in two parts. -->
+      </div>
+      <div id="preFooter">
+          <div class="text-container">
+            <p> </p> <!--Empty p tag needed-->
+            <p>- Anything you'd like to say?</p>
+              <a href="contact.html" class="btn">Get in Touch</a>
+          </div>
+
+      </div>
+      <footer>
+        <p >© 2020 Jorge Munoz. All rights reserved.</p>
+      </footer>
+    </div> <!--End wrapper-->
+
+<!-------------------------------------Social Container---------------------------------------------->
+<!-- This section will appear in the bottom of windows and it will stay fiexed in the scream. 
+     This setion is out of parallax__group-->
+    <div class="social-container">
+      <a href="https://github.com/Jorgeluismunoz" target="_blank"
+        ><i class="icon ion-logo-github"></i
+      ></a>
+      <a href="https://www.instagram.com/jorgeluism2/" target="_blank"
+        ><i class="icon ion-logo-instagram"></i
+      ></a>
+      <a href="https://www.facebook.com/jorgeluis2009" target="_blank"
+        ><i class="icon ion-logo-facebook"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/jorge-munoz-5644128b/" target="_blank"
+        ><i class="icon ion-logo-linkedin"></i
+      ></a>
+    </div> 
+<!-------------------------------------navigation Menu----------------------------------------------->
+<!-- This section has to be in the but it will appear in the top of windows and it will stay fiexed in the scream. 
+     This setion is out of parallax__group-->
+    <nav>
+      <div class="nav-container">
+          <a href="../index.html" class="btn">Home</a></li>
+          <a href="about.html" class="thisBtn">About</a></li>
+          <a href="blog.html" class="btn"> Blog</a></li>
+          <a href="contact.html" class="btn">Contact</a></li>
+      </div> 
+  </nav>
+<!--------------------------------------------------------------------------------------------------->
+  </body>
+</html>

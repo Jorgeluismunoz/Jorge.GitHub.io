@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--Jorge Munoz.
+    CSD 122 Javascript and JQery.
+    Web Project, Feb 2020.-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- X-UA-Compatible is a document mode meta tag that allows to choose what version of Internet Explorer the page should be rendered as-->
+    <title>Blog Jorge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--The width=device-width key-value pair sets the width of the viewport to the width of the device. 
+        The initial-scale=1 key-value pair sets the initial zoom level when visiting the page. -->
+    <link rel="stylesheet" href="../css&Script/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../css&Script/script.js"></script>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--The entire contain of the page has to be inside wrapper, with some static exception in the bottom.-->
+    <div id="wrapper">
+<!----------------------------------------info-container----------------------------------------->
+      <!-- The first part of page that show text description and logo. -->
+      <div class="parallax__group info-container">
+        <section>
+          <h2>Blog</h2><br>
+          <p>The next section is tack assignments.</p>
+        </section >
+        <div class="logoP">
+          <img src="../img/logo1.png" alt="I'm Jorge" />
+        </div>
+      </div>
+
+<!----------------------------------------info-container2----------------------------------------->
+      <div class="parallax__group info-container2">
+        <article class="taskImg" >
+          <a href="../app1/RPS.html" target="_blank"><img class="logo" src="../img/app1.png" alt="logo1" /></a>
+        </article>
+            <section class="task">
+              <div class="text-container">
+                <hr size="3" color="white">
+                <h2>A little about me</h2>
+                <p>Tasks
+
+                  Web version of Rock paper scissors.<br>
+
+                  The rules and description of the game are as follows. <br>
+                  -Each player chooses either rock, paper or scissors.<br>
+                  -The possible outcomes:
+                  Rock destroys scissors,
+                  Scissors cut paper,
+                  Paper covers rock.<br>
+                
+                  <div class="text-container">
+                    <p> </p> <!--Empty p tag needed-->
+                    <p>- If you want to see codes of this application, click next buttons.</p>
+                    <a href="https://github.com/Jorgeluismunoz/Jorge/blob/master/css%26Script/RPS.html" target="_blank" class="btn">HTML Code</a>
+                    <a href="https://github.com/Jorgeluismunoz/Jorge/blob/master/css%26Script/styleRPS.css" target="_blank" class="btn">CSS Code</a>
+                    <a href="https://github.com/Jorgeluismunoz/Jorge/blob/master/css%26Script/javascriptRPS.js" target="_blank" class="btn">JavaScript Code</a>
+                  </div>
+                        </div>
+            </section>
+
+<!-------------------------------------Foot Section---------------------------------------------->
+<!-- Footer is separated in two parts. -->
+      </div>
+      <div id="preFooter">
+          <div class="text-container">
+            <p> </p> <!--Empty p tag needed-->
+            <p>- Anything you'd like to say?</p>
+              <a href="contact.html" class="btn">Get in Touch</a>
+          </div>
+
+<!-------------------------------------Social Container---------------------------------------------->
+<!-- This section will appear in the bottom of windows and it will stay fiexed in the scream. 
+     This setion is out of parallax__group-->
+      </div>
+      <footer>
+        <p >© 2020 Jorge Munoz. All rights reserved.</p>
+      </footer>
+    </div> <!--End wrapper-->
+
+    <div class="social-container">
+      <a href="https://github.com/Jorgeluismunoz" target="_blank"
+        ><i class="icon ion-logo-github"></i
+      ></a>
+      <a href="https://www.instagram.com/jorgeluism2/" target="_blank"
+        ><i class="icon ion-logo-instagram"></i
+      ></a>
+      <a href="https://www.facebook.com/jorgeluis2009" target="_blank"
+        ><i class="icon ion-logo-facebook"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/jorge-munoz-5644128b/" target="_blank"
+        ><i class="icon ion-logo-linkedin"></i
+      ></a>
+    </div> 
+    <nav>
+      <div class="nav-container">
+          <a href="../index.html" class="btn">Home</a></li>
+          <a href="about.html" class="btn">About</a></li>
+          <a href="blog.html" class="thisBtn"> Blog</a></li>
+          <a href="contact.html" class="btn">Contact</a></li>
+      </div> 
+  </nav>
+<!--------------------------------------------------------------------------------------------------->
+  </body>
+</html>

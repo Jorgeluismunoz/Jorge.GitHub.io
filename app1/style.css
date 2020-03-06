@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*--Jorge Munoz.
+    CSD 122 Javascript and JQery.
+    Web Project, Feb 2020.*/
+body { /*Body style attibutes*/
+    background-color: #A9E5F9;
+    min-width: 100%;
+}
+
+header { /*Header style attibutes*/
+    text-align: center;
+    background-color: #0661A7;
+    color: #A9E5F9;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+main { /*Main style attibutes*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #0661A7;
+    
+}
+
+spam { /*Spam style attibutes*/
+    font-size: 30px;
+    text-align:center;
+    width: 50%;
+    padding: 0 0px 0px 0px;
+    margin-bottom: 10px;
+}
+
+input{ /*Input style attibutes*/
+    width: 30%;
+    height:50px; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;   
+}
+
+.ComputerChoose{
+    float:right;
+    border: solid 3px #0661A7;
+    border-radius:10px;
+    height:50%;
+    width:45%;
+    text-align:center;
+    font-size:50px;
+}
+
+.PlayerChoose{ /*Class PlayerChoose style attibutes*/
+    float:left;
+    border: solid 3px #0661A7;
+    border-radius:10px;
+    height:50%;
+    width:45%;
+    text-align:center;
+    font-size:50px;
+}
+#Player1{ /*Id Player1 style attibutes*/
+    width:47%;
+    background-color:#57ADEF;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#Player2{ /*Id Player2 style attibutes*/
+    width:47%;
+    background-color:#57ADEF;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#result { /*Id result style attibutes*/
+    float:center;
+    border: solid 3px #0661A7;
+    border-radius:10px;
+    height:40px;
+    width:97%;
+    text-align:center;
+    font-size:200%;
+    position:absolute;
+    top:400px;
+    background-color: #57ADEF;
+    color: white;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+footer { /*Footer style attibutes*/
+    text-align:center;
+    font-size:200%;
+    top:1000px;
+    margin-top: 400px;
+    color: black;
+}
+.transition {
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--Jorge Munoz.
+    CSD 122 Javascript and JQery.
+    Web Project, Feb 2020.-->
+    <title>Rock Paper Scissor</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css"> <!-- Link to CSS file (.css)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- Link to JQuerry library-->
+    <script src="javascript.js"></script> <!-- Link to javascript file (.js)-->
+  </head>
+
+  <body >
+    
+    <header>
+      <h1>Rock Paper Scissor Game</h1>
+    </header>
+    <main>
+      <p>Do you choose rock, paper or scissor?</p>
+          <!--Three buttons, on clich each one execute function pick(); ... 
+              with value 1(paper), 2(scissor) or 3(rock) ...
+              This function is inside javascript file linked in a script in the head tag.-->
+      <input type="button" class="button" data-value="0" value="Paper ✋">
+      <input type="button" class="button" data-value="1" value="Scissor ✌ ">
+      <input type="button" class="button" data-value="2" value="Rock ✊ ">
+            
+            <!--Spam tags include players(you and computer>) and scores.-->
+      <spam style="color:green; float:left;"> You: <samp id="countYouWin">0</samp></spam>
+      <spam style="color:red; float:right;"> Computer: <samp id="countComputerWin">0</samp></spam>
+
+            <!--Div tags include the obtion choose(paper, scissor or rock).-->
+      <div class="PlayerChoose" id="Player1">❓</div> <!--Player1 id show choose button by user.-->
+      <div class="ComputerChoose" id="Player2">❓</div> <!--Player2 id show random value by computer.-->
+
+      <div id="result">Star Game!</div> <!--result id show which option wins.-->
+    </main>
+    
+    <footer> <!--countTimeGame id numer of times played.-->
+      <p><b>Times: <samp id="countTimeGame">0</samp></b></p> 
+    </footer>
+    
+  </body>
+</html>
