@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Jorge Munoz.
+            CSD 122 Javascript and JQery.
+            Web Project.-->
+        <title>Calculadora JQuery</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="script/script.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--This section is the calculator, confromed by a background squere with buttons-->
+        <div id="calculator">
+            <h1>Calculator JQuery</h1>
+            <p><b>Jorge Munoz.</b> Final project </p>
+
+            <div id="total"></div>
+            <button class="btn num"  value="1">1</button>
+            <button class="btn num"  value="2">2</button>
+            <button class="btn num"  value="3">3</button>
+            <button class="btn ope" id="plus" value="+"> + </button>
+            </br>
+            <button class="btn num"  value="4">4</button>
+            <button class="btn num"  value="5">5</button>
+            <button class="btn num"  value="6">6</button>
+            <button class="btn ope" id="menos" value="-">  -  </button>
+            </br>
+            <button class="btn num"  value="7">7</button>
+            <button class="btn num"  value="8">8</button>
+            <button class="btn num"  value="9">9</button>
+            <button class="btn ope" id="times" value="*"> * </button>
+            </br>
+            <button class="btn num" id="dot" value="."> . </button>
+            <button class="btn num" id="btn2" value="0">0</button>
+            <button class="btn" id="clearLast" value="undo"> Delete </button>
+            <button class="btn ope" id="divided" value="/"> / </button>
+            <br>
+            <button class="btn ope" id="openP" value="(">  (  </button>
+            <button class="btn ope" id="closeP" value=")"> ) </button>
+            <button class="btn clear" id="clear" value="clear"> C </button>
+            <button class="btn" id="equal" value="=">=</button>
+            
+        </div>
+        <!-- This par shows the history of results -->
+        <div>
+            <h4>Calculation History</h4>
+
+            <p id="Last"> 
+            <i id="recent">Recent</i> 
+            <button id="Clear_history">Clear History</button>
+            </p>
+
+            <ul id="History">    
+            </ul>
+        </div>
+        <small style="display:none"></small>
+    </body>
+</html>

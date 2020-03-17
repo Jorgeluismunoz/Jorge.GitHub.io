@@ -1,0 +1,109 @@
+/*Jorge Munoz.
+CSD 122 Javascript and JQery.
+Web Project.*/
+*, body {
+    font-size: 20px;
+   font-weight: bold;
+ }
+ h1, h2{
+     color: white;
+     font-size: 16pt;
+ }
+ h4{
+    margin-bottom: 5px;
+}
+ ul{
+    list-style: none;
+}
+ p{
+     font-family: 'Raleway', sans-serif;
+     font-size: 14px;
+     color: #b0bfc6;
+ }
+ body div{
+     padding: 5px;
+     margin: auto 5px;
+     display: block;
+     width: 350px;
+     margin: auto;
+     padding: 10px;
+ }
+ /*--------------------------Calculator styule----------------*/
+ #calculator{
+     background-color: #35464e;
+     border-radius: 5px;
+     border: 2px solid grey;
+   
+     width: 350px;
+     margin: auto;
+     
+     padding: 10px;
+ }
+ #total{
+     background-color: #273238;
+     font-weight: 100;
+     text-align: right;
+     font-size: 23px;
+     line-height: 24px;
+     padding: 5px;
+     height: 25px;
+     border-radius: 2px;
+     border: 1px solid #fff;
+     margin: 5px auto 2px auto;
+     font-family: 'KhandMajor Mono Display', sans-serif;
+     width: auto;
+     color: #f4f4f4;
+ }
+ button{
+     background-color: #b0bfc6;
+     width: 23%;
+     height: 64px;
+     margin: 3px auto;
+     display: inline-block;
+     border-radius: 5px;
+ }
+ #equal{
+     background-color: #f4f4f4;
+ }
+ #clearLast{
+    background-color: #ff9504;
+}
+ #clear{
+    background-color: #f44236;
+}
+ #plus,#menos,#divided,#times,#openP,#closeP,#dot{
+   background-color: #607d8b;
+   color: white;
+}
+/*----------------------History section------------------------------------*/
+ #listaHistorico{
+     padding-left: 4px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     justify-content: flex-start;
+     align-items: flex-start;
+     font: 15px arial, sans-serif;
+ }
+ #Last {
+     margin-top: 0px;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     align-items: center;
+ }
+ #Clear_history {
+     color: white;
+     margin-left: 10px;
+     border: 3px solid #ff9504;
+     border-radius: 10px;
+     padding: 3px 6px;
+     width: auto;
+     height: auto;
+     background-color: #ff9504;
+     background-color: #f44236;
+ }
+ #recent{
+    font: 20px arial, sans-serif;
+    color: #273238;
+ }
