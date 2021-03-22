@@ -149,7 +149,7 @@ it has some shadow sefects drop-shadow, */
   left: 2.5rem;
   bottom: 2.5rem;
   background-color:#0b75db ;
-  width: 90px;
+  width: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #0b75db);
   filter: drop-shadow(5px 5px 3px #0b75db);
   padding-left: 1.25rem;
